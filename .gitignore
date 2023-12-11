@@ -7,6 +7,9 @@
 # PYC
 *__pycache__
 
+# W3C
+w3c_validator.py
+
 # Test Files
 test_params_create
 test.py
