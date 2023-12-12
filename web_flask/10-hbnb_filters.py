@@ -11,7 +11,8 @@ app = Flask(__name__)
 
 
 @app.route('/hbnb_filters', strict_slashes=False)
-def hbnb_filters():
+def filters_ls():
+    """ Displays HTML page with filters for states and amenities """
     states = storage.all(State).values()
     amenities = storage.all(Amenity).values()
     return render_template('10-hbnb_filters.html', states=states,
@@ -25,4 +26,4 @@ def close_session(self):
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000, debug=False)
+    app.run(host="0.0.0.0", port=5000)
