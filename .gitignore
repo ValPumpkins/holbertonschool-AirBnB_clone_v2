@@ -16,3 +16,7 @@ test.py
 main_delete.py
 consigne.txt
 main_place_amenities.py
+main.py
+
+# SQL DB file
+100-hbnb.sql
